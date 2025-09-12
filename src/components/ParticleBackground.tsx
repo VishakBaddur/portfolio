@@ -55,6 +55,7 @@ export function ParticleBackground() {
       }
 
       draw() {
+        if (!ctx) return
         ctx.save()
         ctx.globalAlpha = this.opacity
         ctx.fillStyle = this.color
