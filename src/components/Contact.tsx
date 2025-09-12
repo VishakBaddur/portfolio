@@ -89,7 +89,7 @@ export function Contact() {
             Get In <span className="text-gradient bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Touch</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Ready to collaborate on your next big project? Let's discuss how we can bring your ideas to life.
+            Ready to collaborate on your next big project? Let&apos;s discuss how we can bring your ideas to life.
           </p>
         </motion.div>
 
@@ -100,7 +100,7 @@ export function Contact() {
             animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h3 className="text-3xl font-bold text-white mb-8">Let's Connect! 🚀</h3>
+            <h3 className="text-3xl font-bold text-white mb-8">Let&apos;s Connect! 🚀</h3>
             <p className="text-gray-300 mb-8 leading-relaxed">
               Ready to build something amazing together? I&apos;m always excited to discuss new opportunities, 
               innovative projects, and potential collaborations. Whether you need an AI engineer, full-stack 

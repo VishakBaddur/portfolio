@@ -28,9 +28,6 @@
 }
 
 @layer base {
-  * {
-    @apply border-gray-700;
-  }
   body {
     @apply bg-slate-900 text-white;
   }
