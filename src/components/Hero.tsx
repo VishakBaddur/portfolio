@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ArrowDown, Github, Linkedin, Mail, Twitter } from 'lucide-react'
+import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react'
 import { useEffect, useState } from 'react'
 
 export function Hero() {
@@ -34,7 +34,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <span className="text-white">Hi, I'm </span>
+            <span className="text-white">Hi, I&apos;m </span>
             <span className="text-gradient bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
               Vishak Baddur
             </span>
@@ -51,7 +51,7 @@ export function Hero() {
             </p>
             <p className="text-lg text-gray-400">
               Building intelligent systems that solve real-world problems. 
-              When I'm not coding, you'll find me on the basketball court, learning Spanish, 
+              When I&apos;m not coding, you&apos;ll find me on the basketball court, learning Spanish, 
               or strategizing my next chess move. Dreaming big and making it happen! 💫
             </p>
           </motion.div>

@@ -47,7 +47,7 @@ export function About() {
             About <span className="text-gradient bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Me</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            A well-rounded tech genius who's passionate about AI, basketball, Spanish, chess, and dreaming big! 
+            A well-rounded tech genius who&apos;s passionate about AI, basketball, Spanish, chess, and dreaming big! 
             Building innovative solutions while having fun along the way. 🚀
           </p>
         </motion.div>
@@ -62,21 +62,21 @@ export function About() {
             <h3 className="text-3xl font-bold text-white mb-6">My Journey</h3>
             <div className="space-y-4 text-gray-300">
               <p>
-                Hey there! I'm Vishak, a tech enthusiast with a 4.0 GPA from UIC who's passionate about 
+                Hey there! I&apos;m Vishak, a tech enthusiast with a 4.0 GPA from UIC who&apos;s passionate about 
                 building intelligent systems. My journey started with curiosity about how AI can solve 
-                real-world problems, and it's led me to some incredible experiences at ISRO and beyond.
+                real-world problems, and it&apos;s led me to some incredible experiences at ISRO and beyond.
               </p>
               <p>
-                When I'm not diving deep into machine learning algorithms or building production-scale systems, 
-                you'll find me shooting hoops on the basketball court, practicing my Spanish (¡Hola!), or 
+                When I&apos;m not diving deep into machine learning algorithms or building production-scale systems, 
+                you&apos;ll find me shooting hoops on the basketball court, practicing my Spanish (¡Hola!), or 
                 trying to improve my chess game. I believe the best engineers are well-rounded individuals 
                 who bring diverse perspectives to problem-solving.
               </p>
               <p>
-                My goal? To become a billionaire through innovation and impact! 💰 But seriously, I'm driven 
-                by the desire to create technology that makes a real difference. Whether it's building AI 
+                My goal? To become a billionaire through innovation and impact! 💰 But seriously, I&apos;m driven 
+                by the desire to create technology that makes a real difference. Whether it&apos;s building AI 
                 systems that help organizations make better decisions or contributing to open-source projects, 
-                I'm always looking for ways to push boundaries and dream bigger.
+                I&apos;m always looking for ways to push boundaries and dream bigger.
               </p>
             </div>
           </motion.div>

@@ -15,7 +15,7 @@ const navItems = [
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
+  const [, setScrolled] = useState(false)
   const { scrollY } = useScroll()
   const backgroundColor = useTransform(scrollY, [0, 100], ['rgba(0,0,0,0)', 'rgba(0,0,0,0.8)'])
 
