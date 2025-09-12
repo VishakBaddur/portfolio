@@ -1,36 +1,156 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Vishak Baddur - Portfolio Website
 
-## Getting Started
+A modern, impressive portfolio website showcasing expertise in Machine Learning, AI, and software engineering.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Modern Design**: Clean, professional design with glass morphism effects
+- **Responsive**: Fully responsive design that works on all devices
+- **Animations**: Smooth animations and transitions using Framer Motion
+- **Interactive**: Particle background and hover effects
+- **SEO Optimized**: Meta tags, Open Graph, and Twitter cards
+- **Performance**: Optimized for fast loading and smooth interactions
+
+## 🛠️ Technologies Used
+
+- **Framework**: Next.js 14 with App Router
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Language**: TypeScript
+- **Deployment**: Vercel (recommended)
+
+## 📁 Project Structure
+
+```
+src/
+├── app/
+│   ├── globals.css          # Global styles and animations
+│   ├── layout.tsx           # Root layout with metadata
+│   └── page.tsx             # Main page component
+├── components/
+│   ├── Hero.tsx             # Hero section with introduction
+│   ├── About.tsx            # About section
+│   ├── Skills.tsx           # Technical skills showcase
+│   ├── Experience.tsx       # Work experience timeline
+│   ├── Projects.tsx         # Featured projects
+│   ├── Contact.tsx          # Contact form and information
+│   ├── Navigation.tsx       # Navigation bar
+│   └── ParticleBackground.tsx # Animated background
+└── public/
+    └── grid.svg             # Background grid pattern
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Design Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Glass Morphism**: Modern glass-like effects for cards and components
+- **Gradient Text**: Eye-catching gradient text effects
+- **Particle Animation**: Interactive particle background
+- **Smooth Scrolling**: Smooth navigation between sections
+- **Hover Effects**: Interactive hover animations
+- **Loading States**: Smooth loading animations
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Getting Started
 
-## Learn More
+1. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Run development server**:
+   ```bash
+   npm run dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Open in browser**:
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📱 Sections
 
-## Deploy on Vercel
+### Hero Section
+- Personal introduction with animated text
+- Social media links
+- Call-to-action buttons
+- Scroll indicator
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### About Section
+- Personal journey and background
+- Key features and expertise
+- Visual elements with animations
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Skills Section
+- Technical skills with progress bars
+- Categorized by technology type
+- Additional expertise tags
+
+### Experience Section
+- Timeline of work experience
+- Detailed achievements and technologies
+- Links to company websites
+
+### Projects Section
+- Featured projects with descriptions
+- Technology stacks
+- Live demo and GitHub links
+- Project status indicators
+
+### Contact Section
+- Contact form with validation
+- Contact information
+- Social media links
+
+## 🎯 Key Highlights
+
+- **Machine Learning Expertise**: Showcases ML/AI projects and skills
+- **ISRO Experience**: Highlights work at India's space research organization
+- **Academic Excellence**: 4.0 GPA from University of Illinois at Chicago
+- **Founder Mentality**: Emphasizes entrepreneurial mindset
+- **Technical Depth**: Comprehensive technical skills and experience
+
+## 🔧 Customization
+
+To customize this portfolio for your own use:
+
+1. Update personal information in components
+2. Replace project data with your own projects
+3. Update social media links and contact information
+4. Modify color scheme in `globals.css`
+5. Add your own images and assets
+
+## 📈 Performance
+
+- **Lighthouse Score**: Optimized for high performance scores
+- **SEO**: Comprehensive meta tags and structured data
+- **Accessibility**: WCAG compliant design
+- **Mobile-First**: Responsive design approach
+
+## 🚀 Deployment
+
+### Vercel (Recommended)
+1. Push code to GitHub
+2. Connect repository to Vercel
+3. Deploy automatically
+
+### Other Platforms
+- Netlify
+- AWS Amplify
+- GitHub Pages
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+
+## 📞 Contact
+
+**Vishak Baddur**
+- Email: vishakbaddurs@gmail.com
+- LinkedIn: [vishakbaddur](https://www.linkedin.com/in/vishakbaddur/)
+- GitHub: [VishakBaddur](https://github.com/VishakBaddur)
+
+---
+
+Built with ❤️ by Vishak Baddur
