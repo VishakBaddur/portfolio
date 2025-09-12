@@ -29,7 +29,8 @@
 
 @layer base {
   body {
-    @apply bg-slate-900 text-white;
+    background-color: #0f172a;
+    color: white;
   }
 }
 

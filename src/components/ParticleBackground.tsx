@@ -32,8 +32,8 @@ export function ParticleBackground() {
       color: string
 
       constructor() {
-        this.x = Math.random() * canvas.width
-        this.y = Math.random() * canvas.height
+        this.x = Math.random() * (canvas?.width || 800)
+        this.y = Math.random() * (canvas?.height || 600)
         this.vx = (Math.random() - 0.5) * 0.5
         this.vy = (Math.random() - 0.5) * 0.5
         this.size = Math.random() * 2 + 1
@@ -46,10 +46,12 @@ export function ParticleBackground() {
         this.y += this.vy
 
         // Wrap around edges
-        if (this.x < 0) this.x = canvas.width
-        if (this.x > canvas.width) this.x = 0
-        if (this.y < 0) this.y = canvas.height
-        if (this.y > canvas.height) this.y = 0
+        const canvasWidth = canvas?.width || 800
+        const canvasHeight = canvas?.height || 600
+        if (this.x < 0) this.x = canvasWidth
+        if (this.x > canvasWidth) this.x = 0
+        if (this.y < 0) this.y = canvasHeight
+        if (this.y > canvasHeight) this.y = 0
       }
 
       draw() {
@@ -65,7 +67,7 @@ export function ParticleBackground() {
 
     // Create particles
     const particles: Particle[] = []
-    const particleCount = Math.floor((canvas.width * canvas.height) / 10000)
+    const particleCount = Math.floor(((canvas?.width || 800) * (canvas?.height || 600)) / 10000)
 
     for (let i = 0; i < particleCount; i++) {
       particles.push(new Particle())
@@ -74,6 +76,7 @@ export function ParticleBackground() {
     // Animation loop
     let animationId: number
     const animate = () => {
+      if (!canvas || !ctx) return
       ctx.clearRect(0, 0, canvas.width, canvas.height)
 
       // Update and draw particles
