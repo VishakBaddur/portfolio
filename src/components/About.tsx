@@ -13,23 +13,23 @@ export function About() {
   const features = [
     {
       icon: Code,
-      title: 'Machine Learning Engineering',
-      description: 'Building production-scale ML systems with expertise in PyTorch, TensorFlow, and MLOps.',
+      title: 'AI & Machine Learning',
+      description: 'Building intelligent systems with PyTorch, TensorFlow, and cutting-edge AI technologies.',
     },
     {
       icon: Lightbulb,
-      title: 'AI Innovation',
-      description: 'Pioneering AI solutions including MCP servers, RAG systems, and neural style transfer.',
+      title: 'Innovation & Problem Solving',
+      description: 'Creating solutions that matter - from MCP servers to neural networks that actually work.',
     },
     {
       icon: Rocket,
-      title: 'Enterprise Experience',
-      description: 'Proven track record at ISRO and tech companies, delivering 40% efficiency improvements.',
+      title: 'Real-World Impact',
+      description: 'Proven results at ISRO and beyond - 40% efficiency improvements and scalable systems.',
     },
     {
       icon: Users,
-      title: 'Technical Leadership',
-      description: 'Leading ML projects, mentoring teams, and building scalable data processing systems.',
+      title: 'Well-Rounded Genius',
+      description: 'Basketball player, Spanish learner, chess strategist, and future billionaire! 🏀♟️💰',
     },
   ]
 
@@ -47,7 +47,8 @@ export function About() {
             About <span className="text-gradient bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Me</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            I'm a passionate developer with a founder's mindset, dedicated to creating innovative solutions that make a real impact.
+            A well-rounded tech genius who's passionate about AI, basketball, Spanish, chess, and dreaming big! 
+            Building innovative solutions while having fun along the way. 🚀
           </p>
         </motion.div>
 
@@ -61,21 +62,21 @@ export function About() {
             <h3 className="text-3xl font-bold text-white mb-6">My Journey</h3>
             <div className="space-y-4 text-gray-300">
               <p>
-                As a Machine Learning Engineer with a 4.0 GPA from the University of Illinois at Chicago, I've 
-                dedicated my career to building innovative AI solutions that solve real-world problems. My journey 
-                began with a curiosity about artificial intelligence and how it can transform industries.
+                Hey there! I'm Vishak, a tech enthusiast with a 4.0 GPA from UIC who's passionate about 
+                building intelligent systems. My journey started with curiosity about how AI can solve 
+                real-world problems, and it's led me to some incredible experiences at ISRO and beyond.
               </p>
               <p>
-                With experience at ISRO's National Remote Sensing Center and Cogniron Technology Solutions, I've 
-                developed expertise in end-to-end ML pipelines, production-scale forecasting systems, and 
-                enterprise-grade AI applications. My founder mentality drives me to think beyond just algorithms 
-                – I focus on creating products that deliver measurable business value.
+                When I'm not diving deep into machine learning algorithms or building production-scale systems, 
+                you'll find me shooting hoops on the basketball court, practicing my Spanish (¡Hola!), or 
+                trying to improve my chess game. I believe the best engineers are well-rounded individuals 
+                who bring diverse perspectives to problem-solving.
               </p>
               <p>
-                I believe in the power of continuous learning and staying at the forefront of AI/ML trends. 
-                Whether it's implementing cutting-edge models, contributing to open-source projects, or building 
-                scalable data pipelines, I'm always looking for ways to push the boundaries of what's possible 
-                with technology.
+                My goal? To become a billionaire through innovation and impact! 💰 But seriously, I'm driven 
+                by the desire to create technology that makes a real difference. Whether it's building AI 
+                systems that help organizations make better decisions or contributing to open-source projects, 
+                I'm always looking for ways to push boundaries and dream bigger.
               </p>
             </div>
           </motion.div>

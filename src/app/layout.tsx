@@ -15,23 +15,23 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Vishak Baddur - Machine Learning Engineer & Future Billionaire',
-  description: 'Machine Learning Engineer with expertise in AI/ML, building production-scale systems. 4.0 GPA from UIC, ISRO experience, and founder mentality.',
-  keywords: ['machine learning', 'AI engineer', 'ML engineer', 'data science', 'PyTorch', 'TensorFlow', 'ISRO', 'portfolio', 'innovation'],
+  title: 'Vishak Baddur - AI Engineer & Future Billionaire 🚀',
+  description: 'Well-rounded tech genius building intelligent systems. AI engineer, basketball player, Spanish learner, chess strategist, and future billionaire. 4.0 GPA from UIC, ISRO experience.',
+  keywords: ['AI engineer', 'machine learning', 'full-stack developer', 'basketball', 'Spanish', 'chess', 'future billionaire', 'ISRO', 'UIC', 'portfolio', 'innovation'],
   authors: [{ name: 'Vishak Baddur' }],
   creator: 'Vishak Baddur',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://vishakbaddur.dev',
-    title: 'Vishak Baddur - Machine Learning Engineer & Future Billionaire',
-    description: 'Machine Learning Engineer with expertise in AI/ML, building production-scale systems. 4.0 GPA from UIC, ISRO experience, and founder mentality.',
+    title: 'Vishak Baddur - AI Engineer & Future Billionaire 🚀',
+    description: 'Well-rounded tech genius building intelligent systems. AI engineer, basketball player, Spanish learner, chess strategist, and future billionaire. 4.0 GPA from UIC, ISRO experience.',
     siteName: 'Vishak Baddur Portfolio',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Vishak Baddur - Machine Learning Engineer & Future Billionaire',
-    description: 'Machine Learning Engineer with expertise in AI/ML, building production-scale systems. 4.0 GPA from UIC, ISRO experience, and founder mentality.',
+    title: 'Vishak Baddur - AI Engineer & Future Billionaire 🚀',
+    description: 'Well-rounded tech genius building intelligent systems. AI engineer, basketball player, Spanish learner, chess strategist, and future billionaire. 4.0 GPA from UIC, ISRO experience.',
     creator: '@vishakbaddur',
   },
   robots: {

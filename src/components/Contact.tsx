@@ -100,11 +100,12 @@ export function Contact() {
             animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h3 className="text-3xl font-bold text-white mb-8">Let's Connect</h3>
+            <h3 className="text-3xl font-bold text-white mb-8">Let's Connect! 🚀</h3>
             <p className="text-gray-300 mb-8 leading-relaxed">
-              I'm always excited to discuss new opportunities, innovative projects, and potential collaborations. 
-              Whether you're looking for a machine learning engineer, full-stack developer, or someone with a 
-              founder's mindset to join your team, I'd love to hear from you.
+              Ready to build something amazing together? I'm always excited to discuss new opportunities, 
+              innovative projects, and potential collaborations. Whether you need an AI engineer, full-stack 
+              developer, or just want to chat about basketball, Spanish, chess, or how to become a billionaire 
+              (I'm still figuring that last one out 😄), I'd love to hear from you!
             </p>
 
             <div className="space-y-6">

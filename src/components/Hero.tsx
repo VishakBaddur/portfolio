@@ -47,11 +47,12 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <p className="mb-4">
-              Machine Learning Engineer & Future Billionaire
+              AI Engineer & Future Billionaire 🚀
             </p>
             <p className="text-lg text-gray-400">
-              Building AI-powered solutions with a founder's mindset. 
-              Passionate about creating impactful technology that transforms ideas into reality through machine learning and innovation.
+              Building intelligent systems that solve real-world problems. 
+              When I'm not coding, you'll find me on the basketball court, learning Spanish, 
+              or strategizing my next chess move. Dreaming big and making it happen! 💫
             </p>
           </motion.div>
 

@@ -11,7 +11,7 @@ export function Skills() {
 
   const skillCategories = [
     {
-      title: 'Machine Learning & AI',
+      title: 'AI & Machine Learning',
       skills: [
         { name: 'PyTorch', level: 95 },
         { name: 'TensorFlow', level: 90 },
@@ -22,36 +22,36 @@ export function Skills() {
       ],
     },
     {
-      title: 'Programming & Data',
+      title: 'Full-Stack Development',
       skills: [
         { name: 'Python', level: 95 },
-        { name: 'Java', level: 85 },
         { name: 'JavaScript', level: 88 },
+        { name: 'React/Next.js', level: 85 },
+        { name: 'Node.js', level: 82 },
         { name: 'SQL', level: 90 },
         { name: 'REST APIs', level: 92 },
-        { name: 'Data Pipelines', level: 88 },
       ],
     },
     {
-      title: 'MLOps & Cloud',
+      title: 'Cloud & DevOps',
       skills: [
         { name: 'AWS', level: 85 },
         { name: 'Docker', level: 88 },
         { name: 'CI/CD', level: 90 },
-        { name: 'Vertex AI', level: 80 },
+        { name: 'Git', level: 95 },
         { name: 'Model Deployment', level: 85 },
         { name: 'Distributed Systems', level: 82 },
       ],
     },
     {
-      title: 'Software Engineering',
+      title: 'Beyond Code',
       skills: [
-        { name: 'Git', level: 95 },
-        { name: 'Testing Frameworks', level: 88 },
-        { name: 'Code Reviews', level: 90 },
-        { name: 'Documentation', level: 85 },
-        { name: 'Feature Engineering', level: 92 },
-        { name: 'Agile Development', level: 88 },
+        { name: 'Basketball', level: 85 },
+        { name: 'Spanish', level: 60 },
+        { name: 'Chess', level: 70 },
+        { name: 'Problem Solving', level: 95 },
+        { name: 'Team Leadership', level: 88 },
+        { name: 'Future Billionaire', level: 100 },
       ],
     },
   ]
@@ -121,14 +121,14 @@ export function Skills() {
           <h3 className="text-2xl font-bold text-white mb-8">Additional Expertise</h3>
           <div className="flex flex-wrap justify-center gap-4">
             {[
-              'Machine Learning Research',
-              'AI Product Development',
+              'AI Innovation',
+              'Full-Stack Development',
               'Technical Leadership',
-              'Enterprise ML Systems',
-              'Open Source Contributions',
-              'Technical Documentation',
-              'Team Mentoring',
-              'Data Science',
+              'Basketball Strategy',
+              'Spanish Learning',
+              'Chess Tactics',
+              'Future Billionaire Planning',
+              'Problem Solving',
             ].map((skill, index) => (
               <motion.span
                 key={skill}
