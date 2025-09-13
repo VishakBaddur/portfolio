@@ -15,7 +15,7 @@ export function Hero() {
         {/* Main Title */}
         <h1 className="text-6xl md:text-8xl font-bold text-white mb-6">
           Hi, I&apos;m{' '}
-          <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+          <span className="text-purple-400">
             Vishak Baddur
           </span>
         </h1>
