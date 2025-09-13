@@ -38,12 +38,14 @@ export default function CleanNav() {
     }`}>
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">V</span>
-            </div>
-            <span className="text-xl font-bold text-white">Vishak</span>
+          {/* Logo - Just hamburger menu */}
+          <div className="flex items-center">
+            <button
+              className="md:hidden p-2 text-gray-300 hover:text-white transition-colors"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
           </div>
 
           {/* Desktop Navigation */}
@@ -58,14 +60,6 @@ export default function CleanNav() {
               </button>
             ))}
           </div>
-
-          {/* Mobile menu button */}
-          <button
-            className="md:hidden p-2 text-gray-300 hover:text-white transition-colors"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
         </div>
 
         {/* Mobile Navigation */}

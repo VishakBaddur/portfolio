@@ -23,12 +23,12 @@ export default function CleanHero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-5xl md:text-7xl font-bold mb-6"
+          className="text-6xl md:text-8xl font-bold mb-6"
         >
-          <span className="text-white">Hi, I&apos;m </span>
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+          <div className="text-white mb-2">Hi, I&apos;m</div>
+          <div className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
             Vishak Baddur
-          </span>
+          </div>
         </motion.h1>
 
         {/* Subtitle */}
@@ -57,14 +57,26 @@ export default function CleanHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12"
+          className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12"
         >
-          <button className="group flex items-center px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-300 shadow-lg hover:shadow-xl">
+          <button 
+            onClick={() => {
+              const element = document.querySelector('#projects');
+              if (element) element.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="group flex items-center px-10 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-xl hover:from-purple-700 hover:to-pink-700 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105"
+          >
             View My Work
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </button>
           
-          <button className="flex items-center px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white font-semibold rounded-lg hover:bg-white/20 transition-all duration-300">
+          <button 
+            onClick={() => {
+              const element = document.querySelector('#contact');
+              if (element) element.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="flex items-center px-10 py-4 bg-white/10 backdrop-blur-md border border-white/30 text-white font-semibold rounded-xl hover:bg-white/20 hover:border-white/50 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+          >
             Let&apos;s Connect
             <Mail className="ml-2 h-5 w-5" />
           </button>
@@ -75,13 +87,13 @@ export default function CleanHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1 }}
-          className="flex items-center justify-center space-x-6"
+          className="flex items-center justify-center space-x-4"
         >
           <a
             href="https://github.com/VishakBaddur"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg hover:bg-white/20 transition-all duration-300"
+            className="p-4 bg-white/10 backdrop-blur-md border border-white/30 rounded-xl hover:bg-white/20 hover:border-white/50 transition-all duration-300 hover:scale-110 hover:shadow-lg"
           >
             <Github className="h-6 w-6" />
           </a>
@@ -89,17 +101,17 @@ export default function CleanHero() {
             href="https://www.linkedin.com/in/vishakbaddur/"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg hover:bg-white/20 transition-all duration-300"
+            className="p-4 bg-white/10 backdrop-blur-md border border-white/30 rounded-xl hover:bg-white/20 hover:border-white/50 transition-all duration-300 hover:scale-110 hover:shadow-lg"
           >
             <Linkedin className="h-6 w-6" />
           </a>
           <a
             href="mailto:vishak@example.com"
-            className="p-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg hover:bg-white/20 transition-all duration-300"
+            className="p-4 bg-white/10 backdrop-blur-md border border-white/30 rounded-xl hover:bg-white/20 hover:border-white/50 transition-all duration-300 hover:scale-110 hover:shadow-lg"
           >
             <Mail className="h-6 w-6" />
           </a>
-          <button className="p-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg hover:bg-white/20 transition-all duration-300">
+          <button className="p-4 bg-white/10 backdrop-blur-md border border-white/30 rounded-xl hover:bg-white/20 hover:border-white/50 transition-all duration-300 hover:scale-110 hover:shadow-lg">
             <Download className="h-6 w-6" />
           </button>
         </motion.div>
