@@ -15,36 +15,62 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Vishak Baddur - AI Engineer & Future Billionaire 🚀',
-  description: 'Well-rounded tech genius building intelligent systems. AI engineer, basketball player, Spanish learner, chess strategist, and future billionaire. 4.0 GPA from UIC, ISRO experience.',
-  keywords: ['AI engineer', 'machine learning', 'full-stack developer', 'basketball', 'Spanish', 'chess', 'future billionaire', 'ISRO', 'UIC', 'portfolio', 'innovation'],
-  authors: [{ name: 'Vishak Baddur' }],
-  creator: 'Vishak Baddur',
+  title: 'Vishak Baddur - AI Engineer & Future Billionaire | Premium Portfolio',
+  description: 'World-class AI Engineer specializing in machine learning systems and production-scale AI applications. Building the future with intelligent technology. Perfect 4.0 GPA, ISRO experience, and future billionaire mindset.',
+  keywords: [
+    'AI Engineer', 'Machine Learning', 'Artificial Intelligence', 'Software Engineer', 
+    'Future Billionaire', 'ISRO', 'Cogniron', 'University of Illinois', 'Basketball', 
+    'Spanish', 'Chess', 'PyTorch', 'TensorFlow', 'React', 'Node.js', 'AWS', 'Docker',
+    'Portfolio', 'Premium', 'World-class', 'Innovation', 'Technology'
+  ],
+  authors: [{ name: 'Vishak Baddur Sadanand' }],
+  creator: 'Vishak Baddur Sadanand',
+  publisher: 'Vishak Baddur Sadanand',
+  metadataBase: new URL('https://vishak-portfolio.onrender.com'),
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://vishakbaddur.dev',
-    title: 'Vishak Baddur - AI Engineer & Future Billionaire 🚀',
-    description: 'Well-rounded tech genius building intelligent systems. AI engineer, basketball player, Spanish learner, chess strategist, and future billionaire. 4.0 GPA from UIC, ISRO experience.',
+    title: 'Vishak Baddur - AI Engineer & Future Billionaire | Premium Portfolio',
+    description: 'World-class AI Engineer specializing in machine learning systems and production-scale AI applications. Building the future with intelligent technology.',
+    url: 'https://vishak-portfolio.onrender.com',
     siteName: 'Vishak Baddur Portfolio',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Vishak Baddur - AI Engineer & Future Billionaire',
+        type: 'image/jpeg',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Vishak Baddur - AI Engineer & Future Billionaire 🚀',
-    description: 'Well-rounded tech genius building intelligent systems. AI engineer, basketball player, Spanish learner, chess strategist, and future billionaire. 4.0 GPA from UIC, ISRO experience.',
+    title: 'Vishak Baddur - AI Engineer & Future Billionaire',
+    description: 'World-class AI Engineer building the future with intelligent technology. Perfect 4.0 GPA, ISRO experience, and future billionaire mindset.',
+    images: ['/og-image.jpg'],
     creator: '@vishakbaddur',
   },
   robots: {
     index: true,
     follow: true,
+    nocache: true,
     googleBot: {
       index: true,
       follow: true,
+      noimageindex: true,
       'max-video-preview': -1,
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
   },
+  verification: {
+    google: 'your-google-verification-code',
+  },
+  category: 'technology',
 }
 
 export default function RootLayout({
@@ -53,12 +79,18 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
+    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable} dark`}>
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="theme-color" content="#0f172a" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+      </head>
       <body className={`${inter.className} antialiased`}>
-        <div className="relative min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
-          <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]" />
-          {children}
-        </div>
+        {children}
       </body>
     </html>
   )
