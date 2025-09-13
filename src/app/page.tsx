@@ -45,31 +45,22 @@ export default function Home() {
       <ParticleBackground />
       <Navigation activeTab={activeTab} setActiveTab={setActiveTab} />
       
-      {/* Stunning Tab Navigation */}
-      <div className="fixed top-24 left-1/2 transform -translate-x-1/2 z-40">
-        <div className="flex space-x-2 bg-black/40 backdrop-blur-xl rounded-2xl p-2 border border-white/20 shadow-2xl">
+      {/* Clean Tab Navigation */}
+      <div className="fixed top-20 left-1/2 transform -translate-x-1/2 z-40">
+        <div className="flex space-x-1 bg-slate-900/80 backdrop-blur-sm rounded-lg p-1 border border-slate-800/50">
           {tabs.map((tab) => (
-            <motion.button
+            <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`relative px-8 py-4 rounded-xl flex items-center space-x-3 transition-all duration-300 font-semibold ${
+              className={`relative px-6 py-3 rounded-md flex items-center space-x-2 transition-all duration-200 font-medium ${
                 activeTab === tab.id
-                  ? 'text-white'
-                  : 'text-gray-400 hover:text-white'
+                  ? 'text-white bg-white/10'
+                  : 'text-slate-400 hover:text-slate-300'
               }`}
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.98 }}
             >
-              {activeTab === tab.id && (
-                <motion.div
-                  layoutId="activeTab"
-                  className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl shadow-lg"
-                  transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
-                />
-              )}
-              <tab.icon className={`w-5 h-5 relative z-10 ${activeTab === tab.id ? 'text-white' : 'text-gray-400'}`} />
-              <span className="relative z-10 font-semibold text-lg">{tab.label}</span>
-            </motion.button>
+              <tab.icon className={`w-4 h-4 ${activeTab === tab.id ? 'text-white' : 'text-slate-400'}`} />
+              <span className="text-sm">{tab.label}</span>
+            </button>
           ))}
         </div>
       </div>
