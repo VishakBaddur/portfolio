@@ -156,13 +156,13 @@ export default function PremiumProjects() {
                     {project.technologies.slice(0, 3).map((tech) => (
                       <span
                         key={tech}
-                        className="px-2 py-1 bg-white/10 rounded-md text-xs font-medium"
+                        className="px-3 py-1 bg-white/10 rounded-lg text-xs font-medium border border-white/20"
                       >
                         {tech}
                       </span>
                     ))}
                     {project.technologies.length > 3 && (
-                      <span className="px-2 py-1 bg-white/10 rounded-md text-xs font-medium">
+                      <span className="px-3 py-1 bg-white/10 rounded-lg text-xs font-medium border border-white/20">
                         +{project.technologies.length - 3} more
                       </span>
                     )}
@@ -176,41 +176,41 @@ export default function PremiumProjects() {
                           <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                         </Button>
                       </DialogTrigger>
-                      <DialogContent className="max-w-2xl">
-                        <DialogHeader>
-                          <DialogTitle className="text-2xl">{project.title}</DialogTitle>
-                          <DialogDescription className="text-purple-400">
+                      <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+                        <DialogHeader className="pb-4">
+                          <DialogTitle className="text-3xl font-bold">{project.title}</DialogTitle>
+                          <DialogDescription className="text-purple-400 text-lg">
                             {project.company}
                           </DialogDescription>
                         </DialogHeader>
-                        <div className="space-y-4">
-                          <p className="text-gray-300">{project.longDescription}</p>
+                        <div className="space-y-6">
+                          <p className="text-gray-300 text-lg leading-relaxed">{project.longDescription}</p>
                           <div>
-                            <h4 className="font-semibold mb-2">Technologies Used:</h4>
-                            <div className="flex flex-wrap gap-2">
+                            <h4 className="font-semibold mb-4 text-xl">Technologies Used:</h4>
+                            <div className="flex flex-wrap gap-3">
                               {project.technologies.map((tech) => (
                                 <span
                                   key={tech}
-                                  className="px-3 py-1 bg-white/10 rounded-md text-sm font-medium"
+                                  className="px-4 py-2 bg-white/10 rounded-lg text-sm font-medium border border-white/20"
                                 >
                                   {tech}
                                 </span>
                               ))}
                             </div>
                           </div>
-                          <div className="flex space-x-4 pt-4">
+                          <div className="flex flex-wrap gap-4 pt-6">
                             {project.github && (
-                              <Button variant="outline" size="sm" asChild>
+                              <Button variant="outline" size="lg" asChild>
                                 <a href={project.github} target="_blank" rel="noopener noreferrer">
-                                  <Github className="mr-2 h-4 w-4" />
-                                  Code
+                                  <Github className="mr-2 h-5 w-5" />
+                                  View Code
                                 </a>
                               </Button>
                             )}
                             {project.live && (
-                              <Button variant="premium" size="sm" asChild>
+                              <Button variant="premium" size="lg" asChild>
                                 <a href={project.live} target="_blank" rel="noopener noreferrer">
-                                  <ExternalLink className="mr-2 h-4 w-4" />
+                                  <ExternalLink className="mr-2 h-5 w-5" />
                                   Live Demo
                                 </a>
                               </Button>

@@ -180,32 +180,42 @@ export default function PremiumExperience() {
           {/* Skills Section */}
           <div>
             <h3 className="text-2xl font-bold mb-8 text-center lg:text-left">Technical Skills</h3>
-            <div className="space-y-6">
+            <div className="grid grid-cols-2 gap-4">
               {skills.map((skill, index) => (
                 <motion.div
                   key={skill.name}
-                  initial={{ opacity: 0, x: 30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.05 }}
+                  className="group"
                 >
-                  <div className="flex items-center justify-between mb-2">
-                    <div className="flex items-center space-x-2">
-                      <span className="font-medium">{skill.name}</span>
-                      <span className="text-xs text-gray-400 bg-white/10 px-2 py-1 rounded">
+                  <div className="p-4 bg-white/5 border border-white/10 rounded-lg hover:bg-white/10 hover:border-white/20 transition-all duration-300">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="font-semibold text-white">{skill.name}</span>
+                      <span className="text-xs text-purple-400 bg-purple-400/20 px-2 py-1 rounded-full">
                         {skill.category}
                       </span>
                     </div>
-                    <span className="text-sm text-gray-400">{skill.level}%</span>
-                  </div>
-                  <div className="w-full bg-white/10 rounded-full h-2">
-                    <motion.div
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${skill.level}%` }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 1, delay: index * 0.1 }}
-                      className="h-2 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full"
-                    />
+                    <div className="flex items-center space-x-2">
+                      <div className="flex space-x-1">
+                        {[...Array(5)].map((_, i) => (
+                          <div
+                            key={i}
+                            className={`w-2 h-2 rounded-full ${
+                              i < Math.floor(skill.level / 20) 
+                                ? 'bg-gradient-to-r from-purple-400 to-pink-400' 
+                                : 'bg-white/20'
+                            }`}
+                          />
+                        ))}
+                      </div>
+                      <span className="text-xs text-gray-400">
+                        {skill.level >= 90 ? 'Expert' : 
+                         skill.level >= 80 ? 'Advanced' : 
+                         skill.level >= 70 ? 'Intermediate' : 'Beginner'}
+                      </span>
+                    </div>
                   </div>
                 </motion.div>
               ))}
