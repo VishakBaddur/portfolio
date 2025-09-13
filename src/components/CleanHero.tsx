@@ -25,7 +25,7 @@ export default function CleanHero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-5xl md:text-7xl font-bold mb-6"
         >
-          <span className="text-white">Hi, I'm </span>
+          <span className="text-white">Hi, I&apos;m </span>
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
             Vishak Baddur
           </span>
@@ -65,7 +65,7 @@ export default function CleanHero() {
           </button>
           
           <button className="flex items-center px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white font-semibold rounded-lg hover:bg-white/20 transition-all duration-300">
-            Let's Connect
+            Let&apos;s Connect
             <Mail className="ml-2 h-5 w-5" />
           </button>
         </motion.div>
