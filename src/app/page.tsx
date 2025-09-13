@@ -3,8 +3,8 @@
 import { useState, useEffect } from 'react'
 import LoadingScreen from '@/components/LoadingScreen'
 import CustomCursor from '@/components/CustomCursor'
-import PremiumNav from '@/components/PremiumNav'
-import PremiumHero from '@/components/PremiumHero'
+import StunningNav from '@/components/StunningNav'
+import StunningHero from '@/components/StunningHero'
 import PremiumProjects from '@/components/PremiumProjects'
 import PremiumExperience from '@/components/PremiumExperience'
 import PremiumBlog from '@/components/PremiumBlog'
@@ -29,9 +29,9 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <CustomCursor />
-      <PremiumNav />
+      <StunningNav />
       
-      <PremiumHero />
+      <StunningHero />
       <PremiumExperience />
       <PremiumProjects />
       <PremiumBlog />
