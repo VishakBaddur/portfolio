@@ -63,7 +63,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Elegant animations */
+/* Stunning animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -84,12 +84,25 @@ html {
   }
 }
 
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(2deg);
+  }
+}
+
 .animate-fade-in-up {
   animation: fadeInUp 0.6s ease-out;
 }
 
 .animate-fade-in {
   animation: fadeIn 0.4s ease-out;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
 }
 
 /* Subtle glass morphism */
@@ -143,6 +156,16 @@ html {
 
 .btn-clean:active {
   transform: translateY(0);
+}
+
+/* Hover lift effect */
+.hover-lift {
+  transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 /* Custom animations */
