@@ -21,56 +21,66 @@ export function Navigation({ activeTab, setActiveTab }: NavigationProps) {
 
   return (
     <motion.nav
-      className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+      className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-sm"
       style={{ backgroundColor }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
+          {/* Elegant Logo */}
           <motion.div
             className="flex-shrink-0"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <button
+            <motion.button
               onClick={() => handleTabChange('home')}
-              className="text-2xl font-bold text-gradient bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300"
+              className="text-2xl font-light text-white hover:text-slate-300 transition-colors duration-200"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
               V
-            </button>
+            </motion.button>
           </motion.div>
 
-          {/* Desktop Navigation */}
+          {/* Clean Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+            <div className="ml-10 flex items-center space-x-8">
               {['home', 'about', 'experience', 'projects', 'contact'].map((tab, index) => (
                 <motion.button
                   key={tab}
                   onClick={() => handleTabChange(tab)}
-                  className={`px-3 py-2 text-sm font-medium transition-colors duration-300 relative group capitalize ${
-                    activeTab === tab ? 'text-white' : 'text-gray-300 hover:text-white'
+                  className={`relative text-sm font-medium transition-colors duration-200 capitalize ${
+                    activeTab === tab 
+                      ? 'text-white' 
+                      : 'text-slate-400 hover:text-slate-300'
                   }`}
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  whileHover={{ scale: 1.05 }}
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
                 >
                   {tab}
                   {activeTab === tab && (
-                    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-purple-400 to-pink-400"></span>
+                    <motion.div
+                      className="absolute -bottom-1 left-0 right-0 h-0.5 bg-white"
+                      layoutId="activeNavTab"
+                      transition={{ type: "spring", bounce: 0.2, duration: 0.4 }}
+                    />
                   )}
                 </motion.button>
               ))}
             </div>
           </div>
 
-          {/* Mobile menu button */}
+          {/* Clean Mobile menu button */}
           <div className="md:hidden">
             <motion.button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-300 hover:text-white p-2"
-              whileTap={{ scale: 0.9 }}
+              className="p-2 text-slate-400 hover:text-white transition-colors duration-200"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </motion.button>
@@ -78,7 +88,7 @@ export function Navigation({ activeTab, setActiveTab }: NavigationProps) {
         </div>
       </div>
 
-      {/* Mobile Navigation */}
+      {/* Clean Mobile Navigation */}
       <motion.div
         className={`md:hidden ${isOpen ? 'block' : 'hidden'}`}
         initial={{ opacity: 0, height: 0 }}
@@ -88,17 +98,21 @@ export function Navigation({ activeTab, setActiveTab }: NavigationProps) {
         }}
         transition={{ duration: 0.3 }}
       >
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 glass">
+        <div className="px-4 pt-2 pb-4 space-y-1 bg-slate-900/95 backdrop-blur-sm border-t border-slate-800/50">
           {['home', 'about', 'experience', 'projects', 'contact'].map((tab, index) => (
             <motion.button
               key={tab}
               onClick={() => handleTabChange(tab)}
-              className={`block px-3 py-2 text-base font-medium w-full text-left transition-colors duration-300 capitalize ${
-                activeTab === tab ? 'text-white' : 'text-gray-300 hover:text-white'
+              className={`block w-full text-left px-3 py-2 text-sm font-medium transition-colors duration-200 capitalize ${
+                activeTab === tab 
+                  ? 'text-white' 
+                  : 'text-slate-400 hover:text-slate-300'
               }`}
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.3, delay: index * 0.1 }}
+              whileHover={{ scale: 1.01 }}
+              whileTap={{ scale: 0.99 }}
             >
               {tab}
             </motion.button>

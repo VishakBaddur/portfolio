@@ -45,30 +45,30 @@ export default function Home() {
       <ParticleBackground />
       <Navigation activeTab={activeTab} setActiveTab={setActiveTab} />
       
-      {/* Tab Navigation */}
+      {/* Elegant Tab Navigation */}
       <div className="fixed top-20 left-1/2 transform -translate-x-1/2 z-40">
-        <div className="flex space-x-1 bg-black/20 backdrop-blur-xl rounded-full p-2 border border-white/10">
+        <div className="flex space-x-1 bg-slate-900/80 backdrop-blur-sm rounded-lg p-1 border border-slate-800/50">
           {tabs.map((tab) => (
             <motion.button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`relative px-6 py-3 rounded-full flex items-center space-x-2 transition-all duration-300 ${
+              className={`relative px-6 py-3 rounded-md flex items-center space-x-2 transition-all duration-200 font-medium ${
                 activeTab === tab.id
                   ? 'text-white'
-                  : 'text-gray-400 hover:text-white'
+                  : 'text-slate-400 hover:text-slate-300'
               }`}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
             >
               {activeTab === tab.id && (
                 <motion.div
                   layoutId="activeTab"
-                  className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full"
-                  transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
+                  className="absolute inset-0 bg-white/10 rounded-md"
+                  transition={{ type: "spring", bounce: 0.2, duration: 0.4 }}
                 />
               )}
-              <tab.icon className="w-4 h-4 relative z-10" />
-              <span className="relative z-10 font-medium">{tab.label}</span>
+              <tab.icon className={`w-4 h-4 relative z-10 ${activeTab === tab.id ? 'text-white' : 'text-slate-400'}`} />
+              <span className="relative z-10 text-sm">{tab.label}</span>
             </motion.button>
           ))}
         </div>
@@ -79,10 +79,10 @@ export default function Home() {
         <AnimatePresence mode="wait">
           <motion.div
             key={activeTab}
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
           >
             {renderContent()}
           </motion.div>
