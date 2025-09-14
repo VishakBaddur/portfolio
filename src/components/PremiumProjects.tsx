@@ -147,31 +147,31 @@ export default function PremiumProjects() {
                   </div>
                 </CardHeader>
                 
-                <CardContent>
-                  <p className="text-gray-300 mb-4 line-clamp-3">
+                <CardContent className="space-y-4">
+                  <p className="text-gray-300 text-sm leading-relaxed">
                     {project.description}
                   </p>
                   
-                  <div className="flex flex-wrap gap-2 mb-6">
+                  <div className="flex flex-wrap gap-2">
                     {project.technologies.slice(0, 3).map((tech) => (
                       <span
                         key={tech}
-                        className="px-3 py-1 bg-white/10 rounded-lg text-xs font-medium border border-white/20"
+                        className="px-2 py-1 bg-white/10 rounded text-xs font-medium"
                       >
                         {tech}
                       </span>
                     ))}
                     {project.technologies.length > 3 && (
-                      <span className="px-3 py-1 bg-white/10 rounded-lg text-xs font-medium border border-white/20">
+                      <span className="px-2 py-1 bg-white/10 rounded text-xs font-medium">
                         +{project.technologies.length - 3} more
                       </span>
                     )}
                   </div>
                   
-                  <div className="flex items-center justify-between">
+                  <div className="pt-2">
                     <Dialog>
                       <DialogTrigger asChild>
-                        <Button variant="ghost" size="sm" className="group">
+                        <Button variant="ghost" size="sm" className="group text-purple-400 hover:text-purple-300">
                           Learn More
                           <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                         </Button>

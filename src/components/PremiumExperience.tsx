@@ -180,7 +180,7 @@ export default function PremiumExperience() {
           {/* Skills Section */}
           <div>
             <h3 className="text-2xl font-bold mb-8 text-center lg:text-left">Technical Skills</h3>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {skills.map((skill, index) => (
                 <motion.div
                   key={skill.name}
@@ -191,13 +191,13 @@ export default function PremiumExperience() {
                   className="group"
                 >
                   <div className="p-4 bg-white/5 border border-white/10 rounded-lg hover:bg-white/10 hover:border-white/20 transition-all duration-300">
-                    <div className="flex items-center justify-between mb-2">
+                    <div className="flex items-center justify-between mb-3">
                       <span className="font-semibold text-white">{skill.name}</span>
                       <span className="text-xs text-purple-400 bg-purple-400/20 px-2 py-1 rounded-full">
                         {skill.category}
                       </span>
                     </div>
-                    <div className="flex items-center space-x-2">
+                    <div className="flex items-center space-x-3">
                       <div className="flex space-x-1">
                         {[...Array(5)].map((_, i) => (
                           <div
