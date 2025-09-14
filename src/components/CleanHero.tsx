@@ -26,7 +26,7 @@ export default function CleanHero() {
           className="text-6xl md:text-8xl font-bold mb-6"
         >
           <div className="text-white mb-2">Hi, I&apos;m</div>
-          <div className="text-purple-400 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+          <div className="text-purple-400">
             Vishak Baddur
           </div>
         </motion.h1>
