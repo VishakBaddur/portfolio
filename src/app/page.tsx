@@ -3,7 +3,7 @@
 import CleanNav from '@/components/CleanNav'
 import CleanHero from '@/components/CleanHero'
 import PremiumExperience from '@/components/PremiumExperience'
-import PremiumProjects from '@/components/PremiumProjects'
+import CleanProjects from '@/components/CleanProjects'
 import PremiumContact from '@/components/PremiumContact'
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
       <CleanNav />
       <CleanHero />
       <PremiumExperience />
-      <PremiumProjects />
+      <CleanProjects />
       <PremiumContact />
     </main>
   )
